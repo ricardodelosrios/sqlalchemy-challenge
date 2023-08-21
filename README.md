@@ -1,6 +1,6 @@
 # sqlalchemy-challenge
 
-##Introduction
+## Introduction
 
 This project will analyze the climate in Honolulu, Hawaii, considering that a vacation is planned at this destination.
 
