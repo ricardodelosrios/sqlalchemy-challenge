@@ -18,7 +18,15 @@ This project will analyze the climate in Honolulu, Hawaii, considering that a va
   
     * [climate_starter.ipynb](https://github.com/ricardodelosrios/sqlalchemy-challenge/blob/main/climate_starter.ipynb): In this file are the queries to analyze and explore the Climate Data..
     * [app.py](https://github.com/ricardodelosrios/sqlalchemy-challenge/blob/main/app.py):There is a py file where a Flask API was designed.
-   
+
+## Installation
+
+To install:
+
+SQLite reads and writes directly to ordinary disk files, which can in turn be stored on a computer’s hard drive. This makes it much easier to use to perform tests and share between users. If you do not have SQLite installed, run the following code within your terminal: 
+
+`conda install -c anaconda sqlite`
+
 ## Analyze and Explore the Climate Data
 
 It was used the files (`climate_starter.ipynb` and `hawaii.sqlite`) to complete your climate analysis and data exploration.
@@ -41,6 +49,30 @@ Below you will find the explanation of the functions that were used from the sql
 * `inspect`: The inspect module is used to inspect database objects, such as tables, and gather information about them. It can be helpful when you need to dynamically query and analyze the database structure.
 
 If you want to know more about SQLAlchemy you can use the following [documentation](https://docs.sqlalchemy.org/en/20/).
+
+## Design Your Climate App
+
+You will design a Flask API based on the queries you just developed. To do so, use Flask to create your routes as follows:
+
+1. `/`
+   * Start at the homepage.
+   * List all the available routes.
+
+2. `/api/v1.0/precipitation`
+   *Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
+   *Return the JSON representation of your dictionary
+
+3. `/api/v1.0/stations`
+   *Return a JSON list of stations from the dataset.
+
+4. `/api/v1.0/tobs`
+   * Query the dates and temperature observations of the most-active station for the previous year of data.
+   * Return a JSON list of temperature observations for the previous year.
+  
+5. `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
+   
+
+
 
 
 
